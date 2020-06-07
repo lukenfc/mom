@@ -35,7 +35,9 @@ function addItem(){
         const value = document.getElementById("text-box").value
         if(value !== ""){
             console.log('added')
-            price += Math.floor(Math.random()*10)
+            if(value !== "poop"){
+                price += Math.floor(Math.random()*10)
+            }
             document.getElementById("grocery-list").style.display = "block"
             document.getElementById("option2").style.display = "block"
             var listItem = document.createElement("li")
